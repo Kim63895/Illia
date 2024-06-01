@@ -1,2 +1,2 @@
-# Illia
+# Hillel lessons
 main
