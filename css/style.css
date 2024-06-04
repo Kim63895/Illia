@@ -1,0 +1,23 @@
+*{margin: 0;
+  padding:0;
+box-sizing: 0;}
+a{
+    color: rgb(66, 238, 66);
+}
+form{ margin: 8px;
+}
+div{
+    margin: 200px;
+}
+input
+{border-radius: 5px;
+    width: clamp(120px, 50vw, 420px);
+    height: 40px;
+    padding: 5px 20px 10px;
+    margin: 10px;}
+button{padding: 10px 185px 15px;
+background-color: rgb(10, 207, 10);
+color: white;
+
+border-radius: 7px;}
+p{align-items: center;}
