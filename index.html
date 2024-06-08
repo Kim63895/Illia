@@ -10,9 +10,12 @@
 
 <body>
     
-        <p1>  <i>Registrer </i><a href="./page/login.html">Login</a> </p>
-        <p2> Enter your password and emeil to register</p>
-<div>
+       
+       <header class="header"> <h1>Registrer  |  <a class="nav" href="./page/login.html">Login</a></h1>
+      <br><br>
+     <p>Enter your password and emeil to register</p>
+     </header>
+<div class="form">
    <form action="">
 
  <input type="text" name="username" placeholder="username" required>
@@ -29,9 +32,19 @@
 <form action="">
  <input type="email" name="email" placeholder="your email" required>
 </form>
-
- <button type="submit"><b>Register</b></button>
-
-</form> 
+<div>
+<button class="login" type="submit">Register</button>
+</div>
+<br>
+<p>Or register with</p>
+<nav>
+<button class="login-with">
+  <a href="">Continue with Google</a>
+</button>
+</nav>
+<button class="login-with">
+  <a href="">Continue with Facebook</a>
+</button>
+</nav>
 </body>
 </html>
