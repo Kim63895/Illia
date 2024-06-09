@@ -1,41 +1,75 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box ;
+    box-sizing: border-box;
 }
-.nav{ 
-padding: auto;
-color: #1eca63;
+.conteiner{ width: 83.3% ;
+margin: auto;
+background-color: aliceblue;
 }
-.header{
-padding-left: 25%;
-padding: auto;
-}
-.form{
-    padding-left: 25%;
-    border: thin ;
-    border-color:grey ;
-    
-}
-input, button, p{
-padding: 8px 103px 0 0 ;
-margin: 2px;
-text-decoration: none;
-border-radius: 4px;
-}
-.sabmit{
-padding: 10px;    
-margin-top: 8px;
-background-color: #1eca63;
-border: thin;
-border-radius: 4px;
-}
-.login{
-background-color: hwb(141 15% 37%);
-padding: 7px ;
-}
-a{text-decoration: none;}
-.login-with{
-;background-color:white ;
+img{width: 100%;}
+.left-col, .right-col{
+    display: inline-block;
 
 }
+.right-col{
+    width: 42.25%;}
+.left-col{
+    width: 56%;
+    }
+.logo, nav, .auht {
+display: inline-block;
+padding-top: 30px;
+}
+ .auht{padding-right: 120px;}
+.conteiner nav{ 
+width: 50%;    ;
+margin: auto;
+font-size: 16px;
+}
+a{
+padding-right:80px;
+color: #3D3D3D;
+text-decoration:none;
+}
+ .logo{
+    width: 25%;
+    color: #46A358;
+    
+ }
+    .left-col h3{padding-top: 15px;
+    font-size: 14px;
+    padding-bottom: 7px;
+
+}
+.left-col h1{
+    font-size: 70px;
+    padding-bottom: 5px;
+}
+.left-col p{
+    font-size: 14px;
+    padding-bottom: 44px;
+}
+.left-col p{
+    font-size: 16px;
+    padding-bottom: 94px;
+}
+.left-col button{
+    font-size: 16px;
+    background-color: #46A358;
+    color: white;
+    padding: 11px 27px 9px 26px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+}
+.auht button{
+    width: 37p;
+    padding: 8px 17px 7px ;
+    border-radius: 6px;
+    border: none;
+    background-color:#46A358;
+    color: white;
+    font-size: 16px;
+    
+   }
