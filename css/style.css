@@ -5,7 +5,7 @@
 }
 .conteiner{ width: 83.3% ;
 margin: auto;
-background-color: aliceblue;
+
 }
 img{width: 100%;}
 .left-col, .right-col{
@@ -40,7 +40,6 @@ text-decoration:none;
     .left-col h3{padding-top: 15px;
     font-size: 14px;
     padding-bottom: 7px;
-
 }
 .left-col h1{
     font-size: 70px;
@@ -71,5 +70,4 @@ text-decoration:none;
     background-color:#46A358;
     color: white;
     font-size: 16px;
-    
    }
