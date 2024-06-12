@@ -3,26 +3,27 @@
     padding: 0;
     box-sizing: border-box;
 }
-.conteiner{ width: 83.3% ;
-margin: auto;
+.conteiner{ width: 83.333% ;
+margin: 0 auto;
 
 }
 img{width: 100%;}
 .left-col, .right-col{
     display: inline-block;
-
+    vertical-align: auto;
 }
 .right-col{
-    width: 42.25%;}
+ width: 42.25%;}
 .left-col{
-    width: 56%;
+width: 56%;
     }
 .logo, nav, .auht {
 display: inline-block;
 padding-top: 30px;
 }
- .auht{padding-right: 120px;}
-.conteiner nav{ 
+ .aguht{
+padding-right: 120px;}
+.container nav{ 
 width: 50%;    ;
 margin: auto;
 font-size: 16px;
@@ -47,7 +48,7 @@ text-decoration:none;
 }
 .left-col p{
     font-size: 14px;
-    padding-bottom: 44px;
+    padding-bottom: 34px;
 }
 .left-col p{
     font-size: 16px;
@@ -62,7 +63,7 @@ text-decoration:none;
     border: none;
     font-size: 16px;
 }
-.auht button{
+.aught button{
     width: 37p;
     padding: 8px 17px 7px ;
     border-radius: 6px;
