@@ -19,10 +19,12 @@
     float: left;
     width: 30.52%;
     padding-left:10%;
-    padding-top: 5px; 
+    padding-top: 15px; 
+    background-color: beige;
 }
 .right-col {
    width: 58.33%;
+   background-color:azure;
 }
 
 .right-col .line {
@@ -45,6 +47,7 @@ img {
     color: black;
     text-decoration: none;
     font-family: "CeraPro-Medium";
+    padding: 10%;
   
 }
 .left-col div a:active {
@@ -70,4 +73,7 @@ img {
 .price {
     color: #46A358;
     font-family: "CeraPro-Medium";
+}
+.right-col nav div {
+    background-color:#fdfdf4;
 }
