@@ -1,0 +1,73 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family:"CeraPro-Medium" ;
+    src:url(../fonts/CeraPro-Medium.ttf );
+}
+.conteiner {
+    width: 100%;
+    
+}
+.left-col, .right-col {
+    display: inline-block;
+}
+.left-col { 
+    float: left;
+    width: 30.52%;
+    padding-left:10%;
+    padding-top: 5px; 
+}
+.right-col {
+   width: 58.33%;
+}
+
+.right-col .line {
+    float: right;
+    position: relative;
+    padding: 3px;
+    width: 27%;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+.left-col div a:active{
+    color: black;
+}
+.left-col div:first-child {
+    font-size: 20px;
+}
+.left-col div a {
+    color: black;
+    text-decoration: none;
+    font-family: "CeraPro-Medium";
+  
+}
+.left-col div a:active {
+    color: #2b2d2d;
+}
+.right-col p {
+    font-family:"CeraPro-Medium" ;
+
+}
+.left-col a:hover {
+    color:black;
+}
+.right-col nav div a {
+    margin-left:80px;
+    padding-top: 10px;
+    padding-right: 5%;
+    text-decoration: none;
+    font-family: "CeraPro-Medium";
+    color: black;
+}
+.clear-fix {
+    clear: both;}
+.price {
+    color: #46A358;
+    font-family: "CeraPro-Medium";
+}
