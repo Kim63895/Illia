@@ -17,13 +17,14 @@ img {
 }
 .conteiner {
     align-items: stretch;
+    flex-direction: row;
     display: flex;
     width: 90%;
     margin: 171px 105px;
-    flex-grow: 1;
+    order: 3;
 }
 
-.left-col div .nav { 
+.left-col .nav { 
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -41,28 +42,31 @@ a {
     padding: 5px 8px;
     font-family: "cerapro-medium";
     color: #3D3D3D;
-    
 }
 .left-col {
     flex-grow: 1;
     flex-wrap: wrap;
-    flex-direction:row;}
-.right-col {
-    flex-grow: 1;
-    flex-wrap: wrap;
     flex-direction:row;
-    width: 840px;
-    height: 1190px;
+    order: 1;
+    width: 35%;
+}
+    
+.right-col {
+    flex-grow: 2;
+    flex-wrap: wrap;
+    flex-direction: row;
+    order: 1;
+    font-family: "cerapro-medium";
+    width: 62%;
 }
 .card-wrapper {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
    
 }  
-.line {
-    width: calc(33.333% -  15px);
+.line {  width: calc(33.333% -  15px);
     font-family: "cerapro-medium";
+   
 }
 
 .navigation-page {
@@ -79,7 +83,7 @@ a {
 }
 h2 {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     font-family: "Hanged Letters";
     font-weight: 400;
     font-size: 65px;
