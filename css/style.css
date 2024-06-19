@@ -8,72 +8,112 @@
     font-family:"CeraPro-Medium" ;
     src:url(../fonts/CeraPro-Medium.ttf );
 }
-.conteiner {
-    width: 100%;
-    
-}
-.left-col, .right-col {
-    display: inline-block;
-}
-.left-col { 
-    float: left;
-    width: 30.52%;
-    padding-left:10%;
-    padding-top: 15px; 
-    background-color: beige;
-}
-.right-col {
-   width: 58.33%;
-   background-color:azure;
-}
-
-.right-col .line {
-    float: right;
-    position: relative;
-    padding: 3px;
-    width: 27%;
+@font-face {
+    font-family:"Hanged Letters" ;
+    src: url(../fonts/Hanged\ Letters.ttf);
 }
 img {
     width: 100%;
-    height: 100%;
 }
-.left-col div a:active{
-    color: black;
+.conteiner {
+    align-items: stretch;
+    display: flex;
+    width: 90%;
+    margin: 171px 105px;
+    flex-grow: 1;
 }
-.left-col div:first-child {
-    font-size: 20px;
-}
-.left-col div a {
-    color: black;
-    text-decoration: none;
-    font-family: "CeraPro-Medium";
-    padding: 10%;
-  
-}
-.left-col div a:active {
-    color: #2b2d2d;
-}
-.right-col p {
-    font-family:"CeraPro-Medium" ;
 
+.left-col div .nav { 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 370px;
+    height: 774px;
+    padding-left: 30px;
+    background: #FBFBFB;
 }
-.left-col a:hover {
-    color:black;
-}
-.right-col nav div a {
-    margin-left:80px;
-    padding-top: 10px;
-    padding-right: 5%;
+a { 
+    display: flex;
+    flex-wrap: wrap;
     text-decoration: none;
-    font-family: "CeraPro-Medium";
-    color: black;
+    justify-content: start;
+    align-items: stretch;
+    padding: 5px 8px;
+    font-family: "cerapro-medium";
+    color: #3D3D3D;
+    
 }
-.clear-fix {
-    clear: both;}
-.price {
+.left-col {
+    flex-grow: 1;
+    flex-wrap: wrap;
+    flex-direction:row;}
+.right-col {
+    flex-grow: 1;
+    flex-wrap: wrap;
+    flex-direction:row;
+    width: 840px;
+    height: 1190px;
+}
+.card-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+}  
+.line {
+    width: calc(33.333% -  15px);
+    font-family: "cerapro-medium";
+}
+
+.navigation-page {
+    display: flex;
+    padding-right: 10px;
+}
+
+.left-col img {
+    align-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    width: 370px;
+    height: 370px;
+}
+h2 {
+    display: flex;
+    justify-content:center;
+    font-family: "Hanged Letters";
+    font-weight: 400;
+    font-size: 65px;
     color: #46A358;
-    font-family: "CeraPro-Medium";
-}
-.right-col nav div {
-    background-color:#fdfdf4;
-}
+ }
+ h5 {
+    display: flex;
+    justify-content: center;
+    font-family: "cerapro-medium";
+    font-weight: 700;
+    font-size: 23px;
+ } 
+ .left-col .conteiner-buttom {
+    display: flex;
+    flex-wrap: wrap;
+    width: 370px;
+    height: 470px;
+    background: linear-gradient(180deg, rgba(70, 163, 88, 0.1) 0%, rgba(70, 163, 88, 0.03) 100%);
+ }
+ .left-col .conteiner-nav{
+    display: flex;
+    flex-wrap: wrap;
+
+ }
+ .right-col .navigation-page {
+    display: flex;
+    width: 838px;
+    height: 23px;
+ }
+ .price {
+    color:#46A358;
+    font-family: "cerapro-medium";
+ }
+ .left-col .menu :first-child {
+    color: #46A358;
+ }
+ 
