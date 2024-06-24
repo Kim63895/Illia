@@ -33,6 +33,10 @@ img {
     padding-left: 30px;
     background: #FBFBFB;
 }
+.left-col img {
+    width: 100%; 
+    order: 0;
+}
 a { 
     display: flex;
     flex-wrap: wrap;
@@ -47,7 +51,7 @@ a {
     flex-grow: 1;
     flex-wrap: wrap;
     flex-direction:row;
-    order: 1;
+    order: 0;
     width: 35%;
 }
     
@@ -103,6 +107,9 @@ h2 {
     height: 470px;
     background: linear-gradient(180deg, rgba(70, 163, 88, 0.1) 0%, rgba(70, 163, 88, 0.03) 100%);
  }
+ .conteiner-buttom {
+    width: 100%;
+ }
  .left-col .conteiner-nav{
     display: flex;
     flex-wrap: wrap;
@@ -120,4 +127,38 @@ h2 {
  .left-col .menu :first-child {
     color: #46A358;
  }
- 
+.nav :first-child{
+    font-weight: 600;
+    margin-left: -5px;
+ }
+ .card-img {
+    width: 100%;
+    position:relative;
+ }
+ .top-img {
+    width: 90%;
+    
+    top: 70%;
+    left: 0;
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    opacity: 0;
+    transition: 0.5s ease;
+ }
+ .card-img :hover {
+    opacity: 1;
+ }
+ .card-img h6 {
+    width: 40%;
+    height: 10%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #46A358;
+    color: white;
+    font-weight: 400;
+    margin-top: 8px;
+
+ }
