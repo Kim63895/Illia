@@ -30,23 +30,30 @@ img {
     flex-direction: column;
     width: 370px;
     height: 774px;
-    padding-left: 30px;
+    padding: 14px 0 0 30px;
     background: #FBFBFB;
 }
 .left-col img {
-    width: 100%; 
+    max-width: 100%; 
     order: 0;
 }
-a { 
+ a { 
     display: flex;
     flex-wrap: wrap;
     text-decoration: none;
     justify-content: start;
     align-items: stretch;
-    padding: 5px 8px;
     font-family: "cerapro-medium";
     color: #3D3D3D;
 }
+.nav a{
+    padding-bottom: 24px;
+
+}
+.nav :first-child{
+    font-weight: 600;
+    margin-left: -12px ;
+ }
 .left-col {
     flex-grow: 1;
     flex-wrap: wrap;
@@ -62,6 +69,7 @@ a {
     order: 1;
     font-family: "cerapro-medium";
     width: 62%;
+    margin-top: 10px;
 }
 .card-wrapper {
     display: flex;
@@ -112,32 +120,37 @@ h2 {
  }
  .left-col .conteiner-nav{
     display: flex;
-    flex-wrap: wrap;
-
+    justify-content: flex-start;
  }
  .right-col .navigation-page {
     display: flex;
-    width: 838px;
-    height: 23px;
+    justify-content: start;
+    
+    width: 100%;
+    padding-bottom: 30px;
+ }
+
+ .right-col .navigation-page .carent-page{
+    color: #46A358;
+    border-bottom: #46A358;
+ }
+ .right-col .navigation-page a {
+    padding:0 40px 0 0 ;
  }
  .price {
     color:#46A358;
     font-family: "cerapro-medium";
  }
- .left-col .menu :first-child {
+ .left-col .menu{
     color: #46A358;
  }
-.nav :first-child{
-    font-weight: 600;
-    margin-left: -5px;
- }
+
  .card-img {
     width: 100%;
     position:relative;
  }
  .top-img {
     width: 90%;
-    
     top: 70%;
     left: 0;
     position: absolute;
@@ -153,12 +166,14 @@ h2 {
  .card-img h6 {
     width: 40%;
     height: 10%;
-    top: 0;
+    top: 8px;
     left: 0;
     position: absolute;
     background-color: #46A358;
     color: white;
     font-weight: 400;
-    margin-top: 8px;
-
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
  }
