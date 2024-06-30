@@ -1,0 +1,86 @@
+:root {
+    --card-bg-color:#3d3d3d;
+    --card-font-color:#727272;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "cerapro-medium";
+    src: url(../fonts/CeraPro-Medium.ttf);
+}
+.conteiner {
+    max-width: 90%;
+    margin: auto;
+    font-family: "cerapro-medium";
+}
+.first-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FBFBFB;
+    gap: 30px;
+    margin-top: 91px;;
+    padding: 24px;
+}
+form {
+    display: flex;
+}
+.button {
+    width: 25%;
+    padding: 12px 26px;
+    border-top-right-radius:6px ;
+    border-bottom-right-radius: 6px;
+    background-color:#46A358 ;
+    border: transparent;
+    color: #FBFBFB;
+    font-weight: 700;
+    size: 18px;
+}
+.join {
+    padding: 12px;
+    width: 75%;
+    height: auto;
+    border: transparent;
+ 
+}
+form {
+    padding: 26px 0 18px 0;
+}
+.second-block {
+    background: linear-gradient(90deg, #EDF6EF 0%, #52C368 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 14%;
+    padding: 26px;
+}
+.second-block div {
+    display: flex;
+}
+.third-block {
+    padding: 34px 0 28px 26px ;
+    display: flex;
+    justify-content: space-between;
+
+    background: #FBFBFB;
+}
+ul {
+    list-style: none;
+}
+.third-block ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 6px;
+}
+.third-block h4 {
+padding-bottom: 8px;
+}
+.third-block img {
+    padding-bottom: 12px;
+}
+.third-block .social-media 
+{padding-bottom: 32px ;}
