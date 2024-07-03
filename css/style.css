@@ -33,10 +33,6 @@
 }
 .first-block .last-column-p p {
     height: 90px;
-    padding-top: 112px;
-    display: flex;
-    align-items: stretch;
-    
 }
 .first-block img {
     padding-bottom: 14px;
