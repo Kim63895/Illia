@@ -15,6 +15,9 @@
     max-width: 90%;
     margin: auto;
     font-family: "cerapro-medium";
+    width: 1200px;
+    height: 610px;
+    font-size: 14px;
 }
 .first-block {
     display: flex;
@@ -24,6 +27,19 @@
     gap: 30px;
     margin-top: 91px;;
     padding: 24px;
+}
+.first-block .last-column{
+    padding: 0;
+}
+.first-block .last-column-p p {
+    height: 90px;
+    padding-top: 112px;
+    display: flex;
+    align-items: stretch;
+    
+}
+.first-block img {
+    padding-bottom: 14px;
 }
 form {
     display: flex;
@@ -55,13 +71,14 @@ form {
     justify-content: space-between;
     align-items: center;
     height: 14%;
-    padding: 26px;
+    padding: 26px 22px;
 }
 .second-block div {
     display: flex;
+    justify-content:space-between;
 }
 .third-block {
-    padding: 34px 0 28px 26px ;
+    padding: 34px 156px 28px 26px ;
     display: flex;
     justify-content: space-between;
 
@@ -70,14 +87,20 @@ form {
 ul {
     list-style: none;
 }
+h4{ padding-bottom: 8px;
+    font-size: 16px;
+}
 .third-block ul {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     gap: 6px;
 }
-.third-block h4 {
-padding-bottom: 8px;
+.second-block p {
+    padding-left: 12px;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 .third-block img {
     padding-bottom: 12px;
