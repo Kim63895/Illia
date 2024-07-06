@@ -11,21 +11,112 @@
     font-family: "cerapro-medium";
     src: url(../fonts/CeraPro-Medium.ttf);
 }
-.conteiner {
-    max-width: 90%;
+
+.conteiner{
+    max-width: 69.4%;
     margin: auto;
     font-family: "cerapro-medium";
-    width: 1200px;
-    height: 610px;
+    font-size: 14p;
+}
+.col img {
+   width: 68.66%;
+   height: 100%;
+}
+.col-wrapper  {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+.col {
+    display: flex;
+}
+button {
+    background-color: #46A358;
+    border-radius: 6px;
+    padding: 10px 28px;
+    color: #FFFFFF;
+    border: transparent;
     font-size: 14px;
+    font-weight: 500;
+    margin-top: 26px;
+    width: 100%;
+    text-align: center;
+}
+.arrow-right {
+  fill:white;
+}
+.Blog-header {
+    text-align: center;
+    padding-bottom: 36px;
+    font-family: "cerapro-medium";
+    font-size: 14px;
+    color: #727272;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.img-conteiner{
+    width: 100%;
+    
+}
+.conteiner.four {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 44px;
+}
+
+.Blog {
+    background-color: #FBFBFB;
+    color:#727272;
+}
+.conteiner.four .vector {
+    display: flex;
+    align-self:flex-end ;
+}
+.Blog h4 {
+ padding: 8px 0 4px 14px;
+ color: #46A358;
+ font-weight: 500;
+ font-size: 14px;
+}
+.Blog h3 {
+    padding-left: 14px;
+    color: #3d3d3d;
+    font-size: 20px;
+    font-weight: 700;
+}
+.Blog p {
+    padding: 8px 10px 0 14px;
+}
+.Blog h6{
+    color: #3d3d3d;
+    padding: 8px 0 12px 14px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.Blog.four {
+    color: #46A358;
+}
+.Blog-header h2 {
+    padding-bottom: 16px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #3d3d3d;
+}
+.conteiner.five {
+    width: 100%;
+    width: 100%;
+    align-self: center;
 }
 .first-block {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:start`  ;
     background: #FBFBFB;
     gap: 30px;
-    margin-top: 91px;;
+    margin-top: 91px;
     padding: 24px;
 }
 .first-block .last-column{
@@ -34,7 +125,7 @@
 .first-block .last-column-p p {
     height: 90px;
     display: flex;
-    align-items: stretch;
+    align-self: start;
     
 }
 .first-block img {
@@ -69,18 +160,21 @@ form {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 14%;
+    width: 100%;
+    height: 15%;
     padding: 26px 22px;
 }
 .second-block div {
+    width: 100%;
     display: flex;
-    justify-content:space-between;
+ 
+    
 }
 .third-block {
     padding: 34px 156px 28px 26px ;
     display: flex;
-    justify-content: space-between;
-
+    justify-content:stretch;
+    align-items:center;
     background: #FBFBFB;
 }
 ul {
