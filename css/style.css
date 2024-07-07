@@ -18,16 +18,29 @@ img {
     max-width: 100%;
 }
 
-.conteiner{
+body{
     max-width: 90%;
     margin: 0 auto;
     font-family: "cerapro-medium";
 }
-
+.main-menu {
+    display: flex;
+    justify-content: space-between;
+}
+.card-wrapper line{  
+  width: 30%;
+    font-family: "cerapro-medium";
+    
+  
+}
 nav {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+}
+.nav {
+    display: flex;
+    flex-direction: column;
 }
 header{
     display: flex;
@@ -41,6 +54,9 @@ header .centr-menu {
     align-items: center;
     gap: 47px;
 }
+.about-us {
+    display: flex;
+}
 header .centr-menu ul {
     font-family: "EncodeSansExpanded";
 }
@@ -50,19 +66,28 @@ header .centr-menu ul {
     color: var(--card-font-color);
     
 }
-.left-col, .right-col{
+.menu-left-col {
+    width: 50%;
+    display: flex;
+    
+}
+.menu-left-col img {
+    width: 30%;
+}
+.left-col .right-col{
     display: inline-block;
     vertical-align: auto;
 }
 .right-col{
  width: 42.25%;
+ display: flex;
 }
 .left-col{
 width: 56%;
 padding-left: 40px;
 padding: 38px 0 0 40px;
     }
-.logo, nav, .auht {
+.logo nav .auht {
 display: inline-block;
 
 }
@@ -70,13 +95,8 @@ display: inline-block;
 width: 50%;   
 margin: auto;
 font-size: 16px;
-}
- header h4 { 
-    width: 150px;
-    color: #46A358;
-    font-weight: 700;
-    
- }
+}   
+
 .left-col h3{
     padding-top: 15px;
     font-size: 14px;
@@ -192,152 +212,12 @@ button {
     border: transparent;
     font-size: 14px;
     font-weight: 500;
+   
     text-align: center;
 }
-.left-col img {
-    max-width: 100%; 
-    order: 0;
+.arrow-right {
+  fill:white;
 }
- a { 
-    display: flex;
-    flex-wrap: wrap;
-    text-decoration: none;
-    justify-content: start;
-    align-items: stretch;
-    font-family: "cerapro-medium";
-    color: #3D3D3D;
-}
-.nav a{
-    padding-bottom: 24px;
-
-}
-.nav :first-child{
-    font-weight: 600;
-    margin-left: -12px ;
- }
-.left-col {
-    flex-grow: 1;
-    flex-wrap: wrap;
-    flex-direction:row;
-    order: 0;
-    width: 35%;
-}
-    
-.right-col {
-    flex-grow: 2;
-    flex-wrap: wrap;
-    flex-direction: row;
-    order: 1;
-    font-family: "cerapro-medium";
-    width: 62%;
-    margin-top: 10px;
-}
-.card-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-   
-}  
-.line {  width: calc(33.333% -  15px);
-    font-family: "cerapro-medium";
-   
-}
-
-.navigation-page {
-    display: flex;
-    padding-right: 10px;
-}
-
-.left-col img {
-    align-items: stretch;
-    display: flex;
-    flex-wrap: wrap;
-    width: 370px;
-    height: 370px;
-}
-h2 {
-    display: flex;
-    justify-content: center;
-    font-family: "Hanged Letters";
-    font-weight: 400;
-    font-size: 65px;
-    color: #46A358;
- }
- h5 {
-    display: flex;
-    justify-content: center;
-    font-family: "cerapro-medium";
-    font-weight: 700;
-    font-size: 23px;
- } 
- .left-col .conteiner-buttom {
-    display: flex;
-    flex-wrap: wrap;
-    width: 370px;
-    height: 470px;
-    background: linear-gradient(180deg, rgba(70, 163, 88, 0.1) 0%, rgba(70, 163, 88, 0.03) 100%);
- }
- .conteiner-buttom {
-    width: 100%;
- }
- .left-col .conteiner-nav{
-    display: flex;
-    justify-content: flex-start;
- }
- .right-col .navigation-page {
-    display: flex;
-    justify-content: start;
-    
-    width: 100%;
-    padding-bottom: 30px;
- }
-
- .right-col .navigation-page .carent-page{
-    color: #46A358;
-    border-bottom: #46A358;
- }
- .right-col .navigation-page a {
-    padding:0 40px 0 0 ;
- }
- .price {
-    color:#46A358;
-    font-family: "cerapro-medium";
- }
- .left-col .menu{
-    color: #46A358;
- }
-
- .card-img {
-    width: 100%;
-    position:relative;
- }
- .top-img {
-    width: 90%;
-    top: 70%;
-    left: 0;
-    position: absolute;
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    opacity: 0;
-    transition: 0.5s ease;
- }
- .card-img :hover {
-    opacity: 1;
- }
- .card-img h6 {
-    width: 40%;
-    height: 10%;
-    top: 8px;
-    left: 0;
-    position: absolute;
-    background-color: #46A358;
-    color: white;
-    font-weight: 400;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
- }
 .Blog-header {
     text-align: center;
     padding-bottom: 36px;
@@ -471,6 +351,9 @@ form {
 }
 ul {
     list-style: none;
+}
+h4{ padding-bottom: 8px;
+    font-size: 16px;
 }
 .third-block ul {
     display: flex;
