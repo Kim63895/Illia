@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+@font-face {
+    font-family: "cerapro-medium";
+    src: url(../fonts/CeraPro-Medium.ttf);
+}
+.conteiner {
+    font-family: "cerapro-medium";
+    width: 41.666%;
+    margin: 0 auto;
+    font-size: 14px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+.content {
+    width: 60%;
+}
+header a{ 
+    color: #46a358;
+}
+
+header {
+    font-size: 1.42rem;
+    font-weight: 500;
+    padding-bottom: 40px;
+}
+.content p {
+    font-weight: 400;
+    font-size: 0.928rem;
+    padding-bottom: 14px;
+} 
+ input, button{
+    border-color: #EAEAEA;
+    border-radius: 5px;
+    border: 1px solid #EAEAEA;
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+    background: #FFFFFF;
+}
+.login {
+   background-color: #46a358;
+   font-size: 1.14rem;
+   font-weight: 700;
+   text-align: center;
+   color: #FFFFFF;
+   margin-top: calc(40px - 12px);
+}
+.register {
+    border-left: #EAEAEA;
+    border: 100%;
+    text-align: center;
+}
+ a {
+  
+    text-decoration: none;
+}
+.content li {
+    color: #727272;
+}
+.icon {
+   display: flex;
+    width: 20px;
+    height: 20px;
+}
+.content a {
+    gap: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
