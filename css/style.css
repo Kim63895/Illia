@@ -71,19 +71,22 @@ img {
 .card-wrapper {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: ;
 }
 .right-col{
     width: 70%;
     margin-left: 20px;
     
 }
-.line {  width: calc(33.333% -  15px);
+.line {  
+    width: calc(33.333% -  15px);
     font-family: "cerapro-medium";
+    
 }
 .card-img {
     padding-bottom: 20px;
     position: relative;
+    background: #FBFBFB;
+  
 }
 .card-img .top-img {
     display: flex;
@@ -376,7 +379,7 @@ button {
 .first-block {
     display: flex;
     justify-content: space-between;
-    align-items:start`  ;
+    align-items:start ;
     background: #FBFBFB;
     gap: 30px;
     margin-top: 91px;
@@ -463,4 +466,17 @@ h4{ padding-bottom: 8px;
     padding-bottom: 12px;
 }
 .third-block .social-media 
-{padding-bottom: 32px ;}
+{
+    padding-bottom: 32px ;
+}
+.icon {
+     margin-top: 10px;
+     width: 20px;
+     height: 20px;
+ }
+ .icon-conteiner-five {
+ 
+    width: 20px;
+    height: 20px;
+    
+ }
