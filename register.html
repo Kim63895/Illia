@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./register.css">
+    <link rel="stylesheet" href="./css/register.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <title>Hw5</title>
 </head>
 <body>
        <div class="conteiner">
+        <div class="loader"></div>
         <header class="header"> <h1>Registrer  |  <a href="./page/login.html" >Login</a></h1>
         </header>
         <div class="content">
@@ -44,8 +45,18 @@
           <use xlink:href="sprite.svg#facebook"></use>
         </svg>
     Continue with Facebook</a></button>
+   
 </div>
 </div>
 </div>
+  <script>
+    const loader = document.querySelector(".loader");
+    setTimeout(()=> {
+     loader.style.display = "none"
+    }, 1100
+
+    )
+  </script>
+
 </body>
 </html>

@@ -432,10 +432,8 @@ form {
     padding: 26px 22px;
 }
 .second-block div {
-    width: 100%;
     display: flex;
- 
-    
+    align-items: center;
 }
 .third-block {
     padding: 34px 0 28px 26px ;
@@ -480,3 +478,39 @@ h4{ padding-bottom: 8px;
     height: 20px;
     
  }
+ .custom-checkbox {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.custom-checkbox-icon {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #46A358;
+    border-radius: 6px;
+    margin-right: 8px;
+}
+
+.custom-checkbox-icon::before {
+    content: "";
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    background-image: url(../Vectors/secon-block/Stroke-1.svg);
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 51%;
+    margin-top: 2px;
+    transform: translate(-50%, -50%)scale(0);
+    transition: 0.3s ease-in;
+}
+
+.custom-checkbox input:checked ~.custom-checkbox-icon::before {
+    transform: translate(-50%, -50%)scale(1);
+}
+.custom-checkbox input {
+    display: none;
+}

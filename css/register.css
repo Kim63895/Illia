@@ -76,3 +76,50 @@ header {
     justify-content: center;
     align-items: center;
 }
+/* .loader::after {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 48%;
+    right: 0;
+    content: " ";
+    display: block;
+    height: 42px;
+    width:42px;
+    border:solid;
+    border-width: 4px;
+    border-radius: 50%;
+    border-top-color: rgb(230, 247, 247);
+    border-bottom-color: rgb(38, 46, 46);
+    border-left-color: rgb(207, 233, 233);
+    border-right-color: rgb(38, 46, 46);
+    animation: rotating 2.2s linear infinite;
+   } */
+  .loader {
+      position: absolute;
+      top: 50%;
+      left: 48%;
+      width: 60px;
+      height: 25px;
+      border: 2px solid;
+      box-sizing: border-box;
+      border-radius: 50%;
+      display: grid;
+      animation: l2 2s infinite linear;
+    }
+    .loader:before,
+    .loader:after {
+      content: "";
+      grid-area: 1/1;
+      border: inherit;
+      border-radius: 50%;
+      animation: inherit;
+      animation-duration: 3s;
+    }
+    .loader:after {
+      --s:-1;
+    }
+    @keyframes l2 {
+       100% {transform:rotate(calc(var(--s,1)*1turn))}
+    }
+  
