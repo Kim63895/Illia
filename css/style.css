@@ -459,11 +459,11 @@ form {
 }
 .second-block div.block-s-1 {
     justify-content: space-between;
-     width: 48%;
+     width: 38%;
 }
 .second-block div.block-s-2 {
     justify-content: space-between;
-    width: 48%;
+    width: 55%;
     
 }
 .block-s-2 div img {
@@ -736,6 +736,9 @@ header button {
     display: flex;
     justify-content: space-between;
 }
+.second-block div.block-s-2 {
+    width: 50%;
+}
 }
 @media screen and (max-width: 540px) 
 {
@@ -823,5 +826,11 @@ header button {
 }
 .nav-menu nav>ul>li {
     padding: 6px 8px;
+}
+div.adress p {
+    display: flex;
+    justify-content: flex-end;
+    width: 102%;
+ 
 }
 }
