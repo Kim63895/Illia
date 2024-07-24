@@ -25,6 +25,7 @@ img {
     max-width: 83.333%;
     margin: 0 auto;
     font-family: "cerapro-medium";
+    font-size: 14px;
 }
 .main-menu {
     
@@ -50,7 +51,7 @@ img {
     text-align: right;
 }
 .menu-left-col { 
-    width: 28.333%;
+    width: 27%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -69,8 +70,10 @@ img {
     padding-top: 6px;
 }
 .card-wrapper {
+    margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .right-col{
     width: 70%;
@@ -115,6 +118,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 24px;
 }
 header .centr-menu {
     display: flex;
@@ -332,19 +336,18 @@ button {
     width: 100%;
     
 }
-.conteiner.four {
+.four {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 44px;
 }
 
 .Blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #FBFBFB;
     color:#727272;
-}
-.conteiner.four .vector {
-    display: flex;
-    align-self:flex-end ;
 }
 .Blog h4 {
  padding: 8px 0 4px 14px;
@@ -362,6 +365,10 @@ button {
     padding: 8px 10px 0 14px;
 }
 .Blog h6{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: flex-start;
     color: #3d3d3d;
     padding: 8px 0 12px 14px;
     font-size: 14px;
@@ -372,33 +379,45 @@ button {
 }
 .Blog-header h2 {
     padding-bottom: 16px;
-    font-size: 30px;
+    font-size: 2.1rem;
     font-weight: 700;
     color: #3d3d3d;
 }
 .first-block {
     display: flex;
-    justify-content: space-between;
+   justify-content: space-between;
     align-items:start ;
     background: #FBFBFB;
-    gap: 30px;
     margin-top: 91px;
-    padding: 24px;
+   margin-bottom: 20px;
 }
-.first-block .last-column{
-    padding: 0;
+.main-box-g {
+    display: flex;
+}
+.box-g{
+    display: flex;
+}
+.garden-box {
+    padding-right: 34px;
+    padding-left: 26px;
+    padding-bottom: 24px;
 }
 .first-block .last-column-p p {
-    height: 90px;
+    height: 100%;
+    width: 100%;
     display: flex;
     align-self: start;
-    
+    padding-top: 16px;
 }
 .first-block img {
     padding-bottom: 14px;
 }
-form {
-    display: flex;
+form input{
+    padding-left: 10px;
+    border-color: #FFFFFF;
+    box-shadow: 0px 0px 20px 0px #0000000F;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
 }
 .button {
     width: 25%;
@@ -420,20 +439,43 @@ form {
  
 }
 form {
-    padding: 26px 0 18px 0;
+    display: flex;
 }
 .second-block {
     background: linear-gradient(90deg, #EDF6EF 0%, #52C368 100%);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
     width: 100%;
     height: 15%;
     padding: 26px 22px;
 }
+
 .second-block div {
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.second-block div.block-s-1 {
+    justify-content: space-between;
+     width: 48%;
+}
+.second-block div.block-s-2 {
+    justify-content: space-between;
+    width: 48%;
+    
+}
+.block-s-2 div img {
+    padding-right: 8px;
+}
+.second-block div.adress {
+    flex-direction: column;
+    width: 70%;
+}
+div.adress p {
+   display: flex;
+   justify-content: center;
 }
 .third-block {
     padding: 34px 0 28px 26px ;
@@ -441,6 +483,11 @@ form {
     justify-content:space-between;
     align-items:center;
     background: #FBFBFB;
+}
+.futer-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
 }
 ul {
     list-style: none;
@@ -454,11 +501,17 @@ h4{ padding-bottom: 8px;
     flex-direction: column;
     gap: 6px;
 }
-.second-block p {
+.second-block .location {
     padding-left: 12px;
     display:flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    gap: 4px;
+}
+.first-block .last-column {
+    padding-bottom: 18px;
+    padding-left: 8px;
+}
+.second-block .location img {
+    width: 20px;
 }
 .third-block img {
     padding-bottom: 12px;
@@ -473,7 +526,6 @@ h4{ padding-bottom: 8px;
      height: 20px;
  }
  .icon-conteiner-five {
- 
     width: 20px;
     height: 20px;
     
@@ -513,4 +565,263 @@ h4{ padding-bottom: 8px;
 }
 .custom-checkbox input {
     display: none;
+}
+@media screen and (max-width: 1199px) {
+.conteiner-nav {
+    padding-left: 20px;
+    padding-top: 26px;
+}
+.conteiner-nav li { 
+    padding-bottom: 34px;
+}
+.menu-left-col {
+    width: 26.333%;
+}
+.conteiner-buttom :first-child{
+    font-size: 2rem;
+    font-weight: 300;
+}
+.conteiner-buttom h5{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.left-col h1 {
+    font-weight: 700;
+    padding-bottom: 5px;
+    font-size: 2rem;
+}
+.Blog-header h2 {
+    padding-bottom: 12px;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.text-content p {
+    padding-top: 8px ;
+    padding-bottom: 20px;
+    font-size: rem;
+}
+.text h2 {
+    font-size: 1.2rem;
+}
+.Blog h4 {
+    padding: 4px 0 4px 6px;
+    font-size: 0.875rem;
+}
+.Blog h3 {
+    padding-left: 6px;
+    color: #3d3d3d;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.Blog p {
+    padding: 4px 4px 0 6px;
+}
+.Blog h6{
+    color: #3d3d3d;
+    padding: 4px 0 4px 6px;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+.four {
+    gap: 16px;
+}
+.second-block {
+    padding: 14px 10px;
+}
+ .phone p img{
+   padding-right: 8px;
+}
+}
+@media screen and (max-width: 992px) {
+.main-box-g {
+   flex-direction: column;
+}   
+.nav-menu nav>ul>li {
+    padding: 20px 18px ;
+}
+.third-block {
+    padding: 14px 0 14px 14px ;
+}
+.second-block {
+    padding: 16px 12px;
+}
+.second-block div.block-s-2 {
+    width: 40%;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+ .second-block div.block-s-1 {
+    width: 55%;
+    flex-direction: column;
+ }
+}
+@media screen and (max-width: 767px) {
+  header {
+    flex-direction: column;
+  }
+  .logo-header {
+    width: 100%;
+    position: relative;
+}
+header button {
+    position: absolute;
+    top: 4%;
+    right: 8%;
+}
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     margin-bottom: 26px;
+}
+.left-col {
+    width: 100%;
+    padding-left: 8px;
+    padding: 18px 0 0 20px;
+}
+.shop {
+    margin: 24px 0 24px 0px;
+}
+.conteiner-nav {
+    padding-left: 10px;
+    padding-top: 16px;
+}
+.conteiner-nav li { 
+    padding-bottom: 20px;
+}
+.card-wrapper {
+    margin-top: 10px;
+    justify-content: space-around;
+.line 
+    width: calc(37.777% -  15px);
+}
+.card-three .right-content {
+    flex-direction: column;
+    padding-right: 10px;
+}
+.card-three .left-content{
+    flex-direction: column;
+    padding-right: 10px;
+}
+.second-block div.adress {
+    width: 80%;
+}
+.card-three img {
+    width: 80%;
+}
+.text-content {
+    text-align: center;
+}
+.first-block .last-column {
+    padding-bottom: 8px;
+}
+.mail-phone {
+    flex-direction: column;
+}
+.pair-2 {
+    justify-content:space-between;
+}
+.third-block {
+    padding: 14px 12px ;
+    flex-direction: column;
+    gap: 16px;
+}
+.futer-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.futer-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+}
+@media screen and (max-width: 540px) 
+{
+ button {
+    padding: 8px 20px ;
+} 
+.right-col {
+    width: 90%;
+    justify-content: flex-end;
+}
+.line {
+    width: 90%;
+}
+.navigation-page {
+    gap: 0 16px;
+}
+.menu-left-col {
+    display: none;
+    opacity: 0;
+    position: relative;
+}
+.menu-left-col ul li:first-child {
+    display: block;
+    position: absolute;
+    opacity: 1;
+    top: 0;
+    left: 0;
+}
+.card-three {
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 38px;
+}
+.four {
+   flex-direction: column;
+
+}
+.box-g {
+    flex-direction: column;
+   margin-bottom: 10px;
+}
+.img-box {
+    display: none;
+}
+.last-column-p {
+    padding-bottom:40px;
+}
+.lust-column {
+    padding-bottom: 18px;
+}
+.second-block {
+    flex-direction: column;
+    gap: 8px;
+    padding: 14px 10px;
+}  
+.second-block div.block-s-2 {
+    width: 100%;
+    gap: 8px;
+   align-items: center;
+}
+.block-s-1 {
+    gap: 8px;
+}
+.second-block div.block-s-1 {
+    width: 100%;
+    justify-content: flex-start;
+}
+ div.block-s-1 .phone {
+    width: 100%;
+}
+ div.block-s-1 .contacts {
+    width: 100%;
+}
+
+.futer-menu {
+    flex-direction: column;
+    gap: 30px;
+}
+.futer-nav {
+    flex-direction: column;
+    
+}
+.first-block .last-column {
+    padding-bottom: 8px;
+}
+.nav-menu nav>ul>li {
+    padding: 6px 8px;
+}
 }
