@@ -471,7 +471,7 @@ form {
 }
 .second-block div.adress {
     flex-direction: column;
-    width: 70%;
+    width: 72%;
 }
 div.adress p {
    display: flex;
@@ -796,8 +796,17 @@ header button {
 }  
 .second-block div.block-s-2 {
     width: 100%;
+    height: 100%;
     gap: 8px;
-   align-items: center;
+    align-items: flex-start;
+}
+div.block-s-2 .logo-second-block {
+    align-self: center;
+}
+.second-block div {
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
 }
 .block-s-1 {
     gap: 8px;
@@ -812,14 +821,12 @@ header button {
  div.block-s-1 .contacts {
     width: 100%;
 }
-
 .futer-menu {
     flex-direction: column;
     gap: 30px;
 }
 .futer-nav {
     flex-direction: column;
-    
 }
 .first-block .last-column {
     padding-bottom: 8px;
@@ -827,10 +834,8 @@ header button {
 .nav-menu nav>ul>li {
     padding: 6px 8px;
 }
-div.adress p {
-    display: flex;
-    justify-content: flex-end;
-    width: 102%;
- 
+.second-block div.adress {
+    width: 100%;
+    align-items: flex-start;
 }
 }
