@@ -163,7 +163,7 @@ a {
 }
 .header_heading2-buttom {
     align-self: flex-end;
-   
+    gap: 16px;
     nav {
         display: flex;
         gap: 14px;
@@ -482,6 +482,8 @@ img {
     width: 91.666%;
     margin: 0 auto;
     color: #000000;
+    background:#F5F5FA;
+    
     padding: 30px 0;
     svg path {
         fill: #24a3ff;
@@ -559,7 +561,7 @@ background-attachment:scroll;
 }
 .about-menu {
     .article-menu:nth-child(3){
-    width: 100%;
+    width: 100%;c
     }}
     .article-menu:nth-child(1){
         width:calc(50% - 15px);
