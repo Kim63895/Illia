@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <script>
-          const number = +prompt("enter a number:");
-      if (number % 2 === 0 && number !== 2) {
-        alert(`${number}  isn't simple `);
-      } else {
-        alert(`${number}  is simple`);
-      }
-      console.log(number);
-  </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        let number = +prompt('enter number') 
+        if(number <= 2){
+          alert('number is simple')
+        }
+        if else {
+          for(i = 2; i <= Math.sqrt(number); i++)
+          if (number % i === 0)
+          alert(`${number} simple` );
+          break;
+        }
+        else {
+          alert(`${number} simple` )
+        }   
+    </script>
+  </body>
 </html>
