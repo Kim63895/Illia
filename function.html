@@ -7,12 +7,17 @@
   </head>
   <body></body>
   <script>
-        let user = prompt("type something");
-        let delet =prompt("what you want to delete");
-     for(let deletKey of delet ){
-        user = user.split(deletKey).join('');
+    let user = prompt("type something");
+    let delet = prompt("what you want to delete");
+
+    function deletWord(user, delet){
+for(let word of delet ){
+        user = user.split(word).join('');
         }
-        console.log(user)
+        return user;
+      }
+      let result = deletWord(user, delet)
+      console.log(result)
     
   </script>
 </html>

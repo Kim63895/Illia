@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
-<script>
-    function removeElement(array, item){
-newarrey = [];
-        for(let i = 0; i < array.length; i++){
-           if (array[i] !== item) {
-           newarrey.push(array[i]);
-           }
+  </head>
+  <body></body>
+  <script>
+    function removeElement(array, item) {
+      newarrey = [];
+      for (let i = 0; i < array.length; i++) {
+        if (array[i] !== item) {
+          newarrey.push(array[i]);
         }
-        return newarrey;
+      }
+      return newarrey;
     }
-    let str = [1,4,4,3,2];
-    let del = removeElement(str,2);
-    console.log(del)
-</script>
+    let str = [1, 4, 4, 3, 2];
+    let del = removeElement(str, 2);
+    console.log(del);
+  </script>
 </html>
