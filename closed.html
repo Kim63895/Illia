@@ -7,18 +7,18 @@
   </head>
   <body></body>
   <script>
-    function createAdder(value) {
+    function createAdder() {
       let sum = 0;
 
       return function (value) {
         sum += value;
         return sum;
       };
-      const Sum = createAdder();
     }
+    const Sum = createAdder();
+    console.log(Sum(4));
     console.log(Sum(6));
     console.log(Sum(10));
-    console.log(Sum(4));
     console.log(Sum(7));
   </script>
 </html>

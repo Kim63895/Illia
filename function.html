@@ -17,9 +17,11 @@
       }
 
       if (user > 100) {
-        return alert(`corect ${user}` );
-      } else {
-        return alert(`your number, ${user}`);
+        return alert(`Correct, ${user}`);
+      } else if (attempts > 10) {
+        return alert(
+          `You reached the maximum of attempts, your lust number is, ${user}`
+        );
       }
     }
     enterNumber(user);
