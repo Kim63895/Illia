@@ -7,12 +7,20 @@
   </head>
   <body></body>
   <script>
-    function mCarring(a) {
-      return function (b) {
-        return a * b;
-      };
-    }
-
-    console.log(mCarring(5)(2));
+    const ladder = {
+      step: 0,
+      up: function () {
+        this.step++;
+        return this;
+      },
+      down: function () {
+        this.step--;
+        return this;
+      },
+      showStep: function () {
+        return this.step;
+      },
+    };
+    console.log(ladder.up().up().down().showStep());
   </script>
 </html>
