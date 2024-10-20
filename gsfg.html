@@ -26,22 +26,23 @@
     };
 
     function getKey(company) {
-      let totaSalary = 0;
+      let totalSalary = 0;
       for (let key in company) {
-        totaSalary += company[key].reduce((prevValue, value) => {
-          if (Array.isArray(company[key])) {
-            prevValue += value.salary;
-          } else if (company[key] === "object") {
-            for (let subKey in company[key]) {
-              totaSalary += company[key][subKey].reduce( (prevValue, value) => {
-             return prevValue += value.salary
-              }, 0 );
-            }
+        if (Array.isArray(company[key])) {
+          totalSalary += company[key].reduce((prev, value) => {
+            return prev += value.salary;
+          }, 0);
+        } else if (typeof company[key] === "object") {
+          for (let subKey in company[key]) {
+            totalSalary += company[key][subKey].reduce((prev, value) => {
+              return prev += value.salary;
+            }, 0);
           }
-          return totaSalary;
-        }, 0);
+        }
       }
-    };
+      return totalSalary;
+    }
+
     arrangeSum = getKey(company);
     console.log(arrangeSum);
   </script>
