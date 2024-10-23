@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    const objects = {
+      contacts: [
+        { Name: "Ill", PhoneNumber: +480977462, Email: "email11@gmal.com" },
+        { Name: "Lia", phoneNumber: +380977462, email: "email12@gmal.com" },
+        { Name: "Kia", phoneNumber: +480971111, email: "email13@gmal.com" },
+      ],
+      search: function () {
+        let enter = prompt("enter contact name");
+        for (let key of this.contacts) {
+          if (key.Name.toLowerCase() === enter.toLowerCase()) {
+            return key;
+          }
+        }
+        return "not found";
+      },
+      addContact: function () {
+        let newContactName = prompt('Enter Name of new contact ');
+        let newContactPhoneNumber = prompt('Enter the phone number of your new contact');
+        let newContactEmail = prompt('Enter the email of your new contact');
+       
+    if (newContactName === "" || newContactPhoneNumber === "" || newContactEmail === "") {
+      alert("Name cannot be empty. Please try again.");
+      return;
+        }
+        const newContact = {
+            Name: newContactName,
+            PhoneNumber: newContactPhoneNumber,
+            Email: newContactEmail,
+        };
+        this.contacts.push(newContact);
+        console.log('New contact is:', newContact)
+    }, 
+    };
+    console.log(objects.search());
+
+    objects.addContact();
+    
+
+  </script>
+</html>
