@@ -27,9 +27,9 @@
         let newContactPhoneNumber = prompt('Enter the phone number of your new contact');
         let newContactEmail = prompt('Enter the email of your new contact');
        
-    if (newContactName === "" || newContactPhoneNumber === "" || newContactEmail === "") {
-      alert("Name cannot be empty. Please try again.");
-      return;
+    if (newContactName === ""  || newContactPhoneNumber === "" || newContactEmail === "") {
+      alert("Can't be empty. Please try again.");
+     addContact();
         }
         const newContact = {
             Name: newContactName,

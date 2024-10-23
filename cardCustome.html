@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
-<script>
-    let card = {
-        Name: 'Andrew',
-        LastName: 'bill',
-        Phonenumber; '38098273729',
-        Region: 'Ukrain',
-        allInfo:
+  </head>
+  <body></body>
+  <script>
+    const card = {
+      Name: "Andrew",
+      LastName: "Bill",
+      Phonenumber: "38098273729",
+      Region: "Ukrain",
+    };
+    let getInfo = prompt("enter + to get info");
+    if (getInfo === "+") {
+      alert(Object.values(card).join(" / "));
+      console.log(card);
     }
-</script>
+  </script>
 </html>
