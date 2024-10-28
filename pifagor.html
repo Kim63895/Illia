@@ -6,18 +6,26 @@
     <title>Document</title>
   </head>
   <body>
-    <button onclick="onClick()">Pifagors 10*10</button>
+    <div id="pif">
+      <button>Pifagors 10*10</button>
+    </div>
   </body>
   <script>
     let onClick = function () {
       let result = "";
       for (i = 1; i <= 10; i++) {
         for (j = 1; j <= 10; j++) {
-          result += (i * j) + '\t';
+          result += i * j + "\t";
         }
         result += "\n";
       }
-     console.log(result);
+      const neweElement = document.createElement("pre");
+      neweElement.textContent = result;
+      const addElement = document.getElementById("pif");
+      addElement.appendChild(neweElement);
+      
     };
+    const myButton = document.getElementById("pif");
+      myButton.addEventListener('click', onClick)
   </script>
 </html>
