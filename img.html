@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <img id="clickMe" src="./img/1.png" alt="" width="400px" height="300px" />
+    </div>
+  </body>
+  <script>
+    const getImg = document.querySelector("#clickMe");
+    const images = [
+      "../img/1.png",
+      "../img/2.jpg",
+      "../img/3.jpeg",
+      "../img/4.jpeg",
+      "../img/5.jpeg",
+      "../img/7.jpeg",
+      "../img/6.jpeg",
+    ];
+    let onClick = function () {
+      const randomImg = Math.floor(Math.random() * images.length);
+      getImg.src = images[randomImg];
+    };
+
+    getImg.addEventListener("click", onClick);
+  </script>
+</html>
