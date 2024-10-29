@@ -6,17 +6,19 @@
     <title>Document</title>
   </head>
   <body>
-    <button onclick="clickButton()" id="button">Button</button>
+    <button onclick="clickButton()" id="button" >
+      Button
+    </button>
   </body>
   <script>
     const buttonElements = document.getElementById("button");
     function clickButton() {
-      buttonElements.classList.toggle("green");
-    }
+      buttonElements.classList.toggle('green');
+    };
   </script>
   <style>
-    .green {
-      color: green;
-    }
+.green {
+    color: green;
+}
   </style>
 </html>
