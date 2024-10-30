@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="conteiner">
+      <button>Button1</button>
+      <button>Button2</button>
+      <button>Button3</button>
+    </div>
+  </body>
+  <script>
+    const conteiner = document.querySelector("div");
+    conteiner.addEventListener("click", function (event) {
+      if (event.target.tagName === "BUTTON") {
+        const clickedItem = event.target.textContent;
+        alert("Clicked on the button: " + clickedItem);
+      }
+    });
+  </script>
+</html>

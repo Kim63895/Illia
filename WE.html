@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li>task 1 <button>Delete</button></li>
+      <li>task 2 <button>Delete</button></li>
+      <li>task 3 <button>Delete</button></li>
+    </ul>
+    <form action="">
+      <input type="text" />
+      <button type="submit">Add task</button>
+    </form>
+  </body>
+  <style></style>
+  <script>
+    const ul = document.querySelector("ul");
+    const form = document.querySelector("form");
+    const input = document.querySelector("input");
+
+    ul.addEventListener("click", (event) => {
+
+      if (event.target.tagName === "BUTTON") {
+        const li = event.target.parentElement;
+        ul.removeChild(li);
+      }
+    }); 
+
+    form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const newTask = document.createElement("li");
+        newTask.textContent = input.value;
+        ul.appendChild(newTask);
+      
+        const addButton = document.createElement('button');
+        addButton.textContent = "Delete";
+        newTask.appendChild(addButton);
+        input.value=''
+    });
+  </script>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="main">
+      <button id="button1">Button1</button>
+      <button id="button2"><a href="#" target="_blank" id="link">Button2</a></button>
+    </div>
+    <style>
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 30px;
+      }
+    </style>
+  </body>
+  <script>
+    const button1 = document.getElementById("button1");
+    const button2 = document.getElementById("button2");
+    const link = document.getElementById("link");
+
+    button1.addEventListener("click", () => {
+      const input = prompt("enter a link start with: 'http://'");
+
+      if (input) {
+        link.href = input;
+      }
+    });
+  </script>
+</html>
