@@ -8,13 +8,10 @@
   <body>
     <div id="main">
       <button id="button1">Button1</button>
-      <button id="button2"><a href="#" target="_blank" id="link">Button2</a></button>
+      <button id="button2">Button2</button>
     </div>
     <style>
-      a {
-        text-decoration: none;
-        color: black;
-      }
+
       button {
         display: flex;
         justify-content: center;
@@ -31,10 +28,9 @@
 
     button1.addEventListener("click", () => {
       const input = prompt("enter a link start with: 'http://'");
-
-      if (input) {
-        link.href = input;
-      }
+    button2.addEventListener('click', () => {
+      window.location.href = input
+    })
     });
   </script>
 </html>
