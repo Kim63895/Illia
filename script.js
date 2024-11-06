@@ -1,3 +1,4 @@
+"use strict"
 const form = document.querySelector("form");
 const nameInput = document.querySelector(".form-control");
 const errorMessage = document.querySelectorAll("span");
@@ -13,6 +14,7 @@ const validateField = (input, regExp, errorMgElement, errorMessage) => {
     errorMgElement.style.color = "red";
   }
 };
+
 
 const validateForm = () => {
   validateField(nameInput, /^[A-Za-z\s]+$/, errorMessage[0], "This section needs to be filled with letters only.");
