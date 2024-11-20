@@ -33,10 +33,11 @@ class Timer {
     this.updateClock();
   };
   updateClock = () => {
-    if(this.#sec === 0 && this.#min === 0) return;
+    if(this.#min === 0 && this.#sec === 0) return;
     const minutes = this.#min.toString().padStart(2, "0");
     const seconds = this.#sec.toString().padStart(2, "0");
     this.element.textContent = `${minutes}:${seconds} `;
+    
   };
 }
 
