@@ -1,20 +1,45 @@
-class Coach {
-  constructor(Coach, Specialization, Rating) {
-    this.Coach = Coach;
-    this.Specialization = Specialization;
-    this.Rating = Rating;
+
+class Timer {
+  #isRunning = false;
+  #intervalId = null;
+  #sec;
+  #min;
+  constructor(display, initialMinuts, initialSeconds) {
+    this.element = document.querySelector(display);
+    this.#min = initialMinuts;
+    this.#sec = initialSeconds;
   }
-  displayInfo() {
-    console.log(
-      `Coach: ${this.Coach}, Specialization: ${this.Specialization}, Raiting ${this.Rating}`
-    );
-  }
+  startClock = () => {
+    if (!this.#isRunning) {
+      this.#isRunning = true;
+      this.#intervalId = setInterval(this.setDisplay, 1000);
+      this.updateClock();
+    }
+  };
+
+  setDisplay = () => {
+    if (this.#sec === 0) {
+      if (this.#min === 0) {
+        clearInterval(this.#intervalId);
+        this.#isRunning = false;
+        this.element.textContent = "time is over";
+      } else {
+        this.#min -= 1;
+        this.#sec = 59;
+      }
+    } else {
+      this.#sec -= 1;
+    }
+    this.updateClock();
+  };
+  updateClock = () => {
+    if(this.#sec === 0 && this.#min === 0) return;
+    const minutes = this.#min.toString().padStart(2, "0");
+    const seconds = this.#sec.toString().padStart(2, "0");
+    this.element.textContent = `${minutes}:${seconds} `;
+  };
 }
 
-const coach1 = new Coach("John Doe", "Fitness", 4.7);
+const timer = new Timer('p', 1, 25);
 
-const coach2 = new Coach("Alice Smith", "Yoga", 4.9);
-
-coach1.displayInfo(); // "Coach: John Doe, Specialization: Fitness, Rating: 4.7"
-
-coach2.displayInfo(); // "Coach: Alice Smith, Specialization: Yoga, Rating: 4.9"
+const button = document.querySelector("button").addEventListener('click', () => timer.startClock())
