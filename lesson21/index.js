@@ -27,7 +27,6 @@ app.get('/', (req, res) => {
 })
 
 app.get('/todos', (req, res) => {
-    // res.send(todos);
     TodoModel.find().then(
         response => res.send(response)
     )
@@ -39,12 +38,6 @@ app.post('/todos', (req, res) => {
         response => res.send(response)
     )
 
-    // todos.push({
-    //     ...req.body,
-    //     id: +new Date(),
-    // })
-
-    // res.send(todos);
 })
 
 app.delete('/todos/:id', (req, res) => {
