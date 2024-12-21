@@ -1,0 +1,7 @@
+@import "bootstrap/dist/css/bootstrap.css";
+ul {
+    display: flex;
+}
+img {
+    width: 200px;
+}
