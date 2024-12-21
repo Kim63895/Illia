@@ -33,7 +33,7 @@ class App extends Component {
   };
 
   render() {
-    const images = this.props.images || [
+    const images = [
       "img1.png",
       "img2.png",
       "img3.png",
