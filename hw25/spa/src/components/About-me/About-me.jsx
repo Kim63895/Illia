@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-
 import { ThemeContext } from "../Context/themeContext";
+
 const About = () => {
   const [theme] = useContext(ThemeContext);
   return (
@@ -13,4 +13,5 @@ const About = () => {
 
   );
 };
+
 export default About;

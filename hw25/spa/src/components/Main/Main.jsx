@@ -33,7 +33,7 @@ const Main = () => {
           </button>
         </form>
         <ul id="taskList" className="list-group">
-        <li>-Here is your to do list</li>
+        <li>Here is your to do list</li>
           {task.map((task, index) => (
             <li key={index}>{task}</li>
           ))}

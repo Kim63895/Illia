@@ -1,6 +1,5 @@
 const List = ({ images, onLike, likes }) => {
   return (
-
       <ul className="listwrapper">
         {images.map((img, index) => (
           <li key={index} className={`item-${index + 1}`}>

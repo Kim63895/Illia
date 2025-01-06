@@ -1,5 +1,6 @@
 import ChangeNightMode from "../ButtonNightMode/ButtonNightMode";
 import Link from "../Link/Link";
+
 const Header = () => (
   <header className="header">
     <h1>Illia</h1>
@@ -14,7 +15,8 @@ const Header = () => (
         <Link href="/contacts"> Contacts </Link>
       </li>
     </ul>
-    <ChangeNightMode/>
+    <ChangeNightMode />
   </header>
 );
+
 export default Header;

@@ -1,23 +1,15 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { useState } from "react";
 import { Button } from "@mui/material";
-import * as Yup from "yup";
 import Input from "./components/Input/Input"
-
+import InputSchema from "./components/Schema/Schema";
 function App() {
   const [todos, setTodos] = useState([]);
 
   const handleSubmit = (values, { resetForm }) => {
-    setTodos((prevState) => [...prevState, values.name]);
-    resetForm();
+    setTodos([...todos, values.name]); 
+    resetForm(); 
   };
-
-  const InputSchema = Yup.object().shape({
-    name: Yup.string()
-      .min(5, "Too Short!")
-      .max(50, "Too Long!")
-      .required("Required"),
-  });
 
   return (
     <>

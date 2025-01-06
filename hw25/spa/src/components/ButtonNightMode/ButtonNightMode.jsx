@@ -9,4 +9,5 @@ const ChangeNightMode = () => {
 
   return <button onClick={handleClick}>Night-Mode</button>;
 };
+
 export default ChangeNightMode;
