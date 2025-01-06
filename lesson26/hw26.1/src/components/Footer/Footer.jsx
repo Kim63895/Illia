@@ -1,9 +1,14 @@
 import { useSelector } from "react-redux";
-import selectors from "../../redux/slice/selectors";
+import selectors from "../../redux/selectors";
 
 const Footer = () => {
-  const value = useSelector(selectors.counter.value);
-  return <footer>({value})</footer>;
+  const items = useSelector(selectors.items); 
+
+  return (
+    <footer>
+      <p>({items.length})</p> 
+    </footer>
+  );
 };
 
 export default Footer;

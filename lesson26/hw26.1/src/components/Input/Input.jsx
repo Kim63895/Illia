@@ -6,7 +6,7 @@ const Input = ({ label, field, form: { touched, errors }, ...props }) => {
 
   return (
     <Box
-      sx={{ "& > :not(style)": { m: 1, width: "25ch" } }}
+      sx={{ "& > :not(style)": { m: 1, width: "25ch", } }}
       noValidate
       autoComplete="off"
     >
@@ -17,6 +17,7 @@ const Input = ({ label, field, form: { touched, errors }, ...props }) => {
         variant="outlined"
         error={!!isError}
         helperText={isError ? errors[field.name] : ""}
+        
       />
     </Box>
   );

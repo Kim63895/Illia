@@ -1,14 +1,14 @@
 import { Formik, Form, Field } from "formik";
 import Input from "../Input/Input"; 
-import InputSchema from "../Schema/Schema"; 
+import InputSchema from "../../Schemas/Schema"; 
 import todoSlice from "../../redux/slices/todoSlice";
 import { useDispatch, useSelector } from "react-redux";
-import ButtonIncrement from "../ButtonIncrement/ButtonIncrement";
-
+import selectors from "../../redux/selectors"
+import {Button} from "@mui/material"
 const TodoForm = () => {
-  const todos = useSelector((state) => state.todos.items)
-  const dispatch = useDispatch();
+  const items = useSelector(selectors.items)
 
+  const dispatch = useDispatch();
   const onSubmit = (values, { resetForm }) => {
     dispatch(todoSlice.actions.addItem({ id: +new Date(), text: values.name }));
     resetForm();
@@ -34,14 +34,13 @@ const TodoForm = () => {
                 fontSize: "16px",
               }}
             />
-            <ButtonIncrement/>
+            <Button type="submit" variant="contained" >Add Todo</Button>
           </Form>
         )}
       </Formik>
-
       <ul>
-        {todos.map((todo, index) => (
-          <li key={todo.id}>{todo.text}</li>
+        {items.map((item) => (
+          <li key={item.id}>{item.text}</li>
         ))}
       </ul>
     </div>
