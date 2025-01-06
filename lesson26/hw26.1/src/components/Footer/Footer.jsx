@@ -1,9 +1,9 @@
 import { useSelector } from "react-redux";
 import selectors from "../../redux/slice/selectors";
 
-const Header = () => {
+const Footer = () => {
   const value = useSelector(selectors.counter.value);
-  return <header>({value})</header>;
+  return <footer>({value})</footer>;
 };
 
-export default Header;
+export default Footer;
