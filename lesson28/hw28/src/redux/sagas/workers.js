@@ -1,8 +1,8 @@
-import { all, call, put, takeEvery } from "redux-saga/effects";
-import { API } from "../constants/constant";
-import {   editItem,  toggleCheckbox, addTodo, deleteItem, fetchItems, fetchStart,deleteTodo, addItem,} from "./slices/todoSlice";
+import { API } from "../../constants/constant";
+import { editItem, toggleCheckbox, deleteItem, fetchItems,  addItem} from "../slices/todoSlice";
+import { call, put } from "redux-saga/effects";
 
-function fetchHelper(url, options) {
+ function fetchHelper(url, options) {
   return fetch(url, options).then((response) => {
     if (!response.ok) {
       throw new Error("Http error");
@@ -11,7 +11,6 @@ function fetchHelper(url, options) {
   });
 }
 
-// Worker Sagas
 function* fetchItemsSaga() {
   try {
     const todos = yield call(fetchHelper, API.URL_TODO);
@@ -33,7 +32,7 @@ function* deleteItemSaga(action) {
 }
 
 function* addItemSaga(action) {
-    console.log("Action Payload:", action.payload);
+  console.log("Action Payload:", action.payload);
   try {
     const todo = yield call(fetchHelper, API.URL_TODO, {
       method: "POST",
@@ -73,36 +72,18 @@ function* saveCheckboxSaga(action) {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ completed: action.payload.completed }),
-      }
+      } 
     );
-    
+
     yield put(toggleCheckbox(updatedTodo));
   } catch (error) {
     console.error("Fetch error:", error);
   }
 }
-
-// Watcher Sagas
-function* watchFetchTodos() {
-  yield takeEvery(fetchStart.type, fetchItemsSaga);
-}
-
-function* watchDeleteTodo() {
-  yield takeEvery(deleteTodo.type, deleteItemSaga);
-}
-
-function* watchAddTodo() {
-  yield takeEvery(addTodo.type, addItemSaga);
-}
-
-function* watchEditTodo() {
-  yield takeEvery(editItem.type, editItemSaga);
-}
-function* watchBoxTodo() {
-  yield takeEvery(toggleCheckbox.type, saveCheckboxSaga);
-}
-
-// Root Saga
-export default function* rootSaga() {
-  yield all([
-watchDeleteTodo(), watchFetchTodos(), watchAddTodo(), watchEditTodo(), watchBoxTodo()]);}
+export {
+  fetchItemsSaga,
+  deleteItemSaga,
+  addItemSaga,
+  editItemSaga,
+  saveCheckboxSaga,
+};
