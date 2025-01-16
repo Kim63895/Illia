@@ -32,7 +32,6 @@ function* deleteItemSaga(action) {
 }
 
 function* addItemSaga(action) {
-  console.log("Action Payload:", action.payload);
   try {
     const todo = yield call(fetchHelper, API.URL_TODO, {
       method: "POST",

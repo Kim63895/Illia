@@ -1,5 +1,5 @@
 
-import TodoForm from '../src/components/TodoForm/TodoForm'
+import TodoForm from './components/TodoForm/TodoForm'
 import { store } from "./redux/store";
 import { Provider } from "react-redux";
 

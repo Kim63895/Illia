@@ -16,6 +16,12 @@ export const todoSlice = createSlice({
     addTodo: (state) => {
       state.loading = true;
     }, 
+    editTodo: (state) => {
+      state.loading = true;
+    },
+    checkboxTodo: (state) => {
+      state.loading = true;
+    },
     toggleCheckbox: (state, action) => {
       state.items = state.items.map((item) => item.id === action.payload.id ? {...item, completed: action.payload.completed} : item)
       state.loading = false;
@@ -41,6 +47,6 @@ export const todoSlice = createSlice({
   },
 });
 
-export const { addItem, toggleCheckbox, editItem, deleteTodo, addTodo, fetchItems, clearItems, fetchStart, deleteItem } = todoSlice.actions;
+export const { addItem, toggleCheckbox, checkboxTodo, editTodo, editItem, deleteTodo, addTodo, fetchItems, clearItems, fetchStart, deleteItem } = todoSlice.actions;
 
 
