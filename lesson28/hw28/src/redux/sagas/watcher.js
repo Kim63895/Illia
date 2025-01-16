@@ -1,6 +1,6 @@
 import {
-  editItem,
-  toggleCheckbox,
+  editTodo,
+  checkboxTodo,
   addTodo,
   fetchStart,
   deleteTodo,
@@ -27,8 +27,9 @@ export function* watchAddTodo() {
 }
 
 export function* watchEditTodo() {
-  yield takeEvery(editItem.type, editItemSaga);
+  yield takeEvery(editTodo.type, editItemSaga);
 }
+
 export function* watchBoxTodo() {
-  yield takeEvery(toggleCheckbox.type, saveCheckboxSaga);
+  yield takeEvery(checkboxTodo.type, saveCheckboxSaga);
 }
