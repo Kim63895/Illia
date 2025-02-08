@@ -1,0 +1,11 @@
+@import "bootstrap/dist/css/bootstrap.css";
+
+.listItem {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 4px;
+}
+.btn {
+    margin: 5px;
+}
