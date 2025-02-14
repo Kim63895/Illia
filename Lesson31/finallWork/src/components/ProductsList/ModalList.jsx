@@ -8,7 +8,7 @@ import {
   fetchStart,
 } from "../../redux/slices/productsSlice.js";
 import { Formik, Form, Field } from "formik";
-import { validationSchema } from "../schemas/FieldSchema.js";
+import { validationSchema } from "../../schemas/FieldSchema.js";
 
 const ModalList = () => {
   const dispatch = useDispatch();

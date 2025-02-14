@@ -10,7 +10,7 @@ import {
 import { Visibility, VisibilityOff } from "@mui/icons-material";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { loginSchema } from "../schemas/LoginSchema";
+import { loginSchema } from "../../schemas/LoginSchema";
 import { boxStyles } from "./LofinFormStyle"; 
 import Icon from "../Icons/Icon";
 

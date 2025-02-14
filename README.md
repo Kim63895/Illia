@@ -1,2 +1,0 @@
-# Hillel lessons
-main
